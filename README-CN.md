@@ -2,7 +2,8 @@
 
 DeePay API提供了一种简单易用、功能强大和安全的在线支付方法，来接受比特币、莱特币、以太坊和其他加密货币。[了解更多](https://deepay.net)
 
-### [English Version](./README.md)
+* [English Version](./README.md)
+* [PHP库](https://github.com/DeePayNet/deepay-php/blob/master/README-CN.md)
 
 
 ## 概览
@@ -42,7 +43,7 @@ POST https://deepay.net/order/create
 {
     "payment_url": "https://deepay.net/order/20180813160720569710",
     "price_currency": "CNY",
-    "price_amount": "10",
+    "price_amount": 10,
     "transaction_id": "20180813160720569710",
     "status": "new",
     "created_at": 1534147640
@@ -73,15 +74,15 @@ POST https://deepay.net/order/checkout
 {
     "payment_url": "https://deepay.net/order/20181006170328484998",
     "price_currency": "USD",
-    "price_amount": "10.0001",
+    "price_amount": 10.0001,
     "transaction_id": "20181006170328484998",
     "pay_currency": "BTC",
-    "pay_amount": "0.0016",
+    "pay_amount": 0.0016,
     "status": "pending",
     "created_at": 1538816608,
     "expire_at": 1538817815,
     "payment_address": "2Mvp6TgEzWCWT2K1hjRWpy5hq8BHnnCjY6X",
-    "attach": "abc"
+    "attach": "附加信息"
 }
 ```
 
@@ -107,11 +108,11 @@ POST https://deepay.net/order/query
 {
     "merchant_id": "10001",
     "out_trade_id": "E201809123",
-    "pay_amount": "0.0016",
+    "pay_amount": 0.0016,
     "pay_currency": "BTC",
-    "price_amount": "10.0001",
+    "price_amount": 10.0001,
     "price_currency": "USD",
-    "attach": "abc",
+    "attach": "附加信息",
     "created_at": 1538796660,
     "expire_at": 1538797878,
     "transaction_id": "20181006113100525110",
